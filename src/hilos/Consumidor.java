@@ -3,8 +3,8 @@ package hilos;
 public class Consumidor extends Thread {
 	private Tuberia tuberia;
 
-	public Consumidor(Tuberia tuberia) {
-		this.tuberia = tuberia;
+	public Consumidor(Tuberia t) {
+		this.tuberia = t;
 	}
 
 	public void run() {

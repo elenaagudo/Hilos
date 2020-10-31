@@ -32,14 +32,15 @@ public class Tuberia {
 			} catch (InterruptedException e) {
 
 			}
-			buffer[siguiente] = c;
-			siguiente++;
-			if(siguiente == 6) {
-				estaLlena = true;
-			}
-			
-			estaVacia = false;
-			notify();
 		}
+		buffer[siguiente] = c;
+		siguiente++;
+		if(siguiente == 6) {
+			estaLlena = true;
+		}
+		
+		estaVacia = false;
+		notify();
+		
 	}
 }
